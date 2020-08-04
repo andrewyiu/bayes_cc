@@ -31,7 +31,7 @@ rho <- 0.995
 rhoxi <- 0.995
 
 # total number of MCMC iterations
-iter <- 100
+iter <- 1000000
 
 start_time <- Sys.time()
 
