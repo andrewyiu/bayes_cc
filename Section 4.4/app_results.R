@@ -1,5 +1,5 @@
 ##############################################################################################
-## Create the density strips plot in Figure 4 and the "Analysis results" section of Table 4 ##
+## Create the density strips plot in Figure 2 and the "Analysis results" section of Table 2 ##
 ##############################################################################################
 
 library(denstrip)
