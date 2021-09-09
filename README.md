@@ -40,7 +40,7 @@ R version 3.6.1
 
 #### Section 3
 
-The file "sim.R" runs the main simulation in Section 3 for a single set of parameter values and prints out the results in Table 2. It runs on 20 cores on a single node for about 20 minutes. To obtain the results for all sets of parameter values, the user could either run the jobs successively, or simultaneously on an array job.
+The file "sim.R" runs the main simulation in Section 3 for a single set of parameter values and prints out the results in Table 1. It runs on 20 cores on a single node for about 20 minutes. To obtain the results for all sets of parameter values, the user could either run the jobs successively, or simultaneously on an array job.
 
 #### Section 4.4
 
