@@ -10,14 +10,8 @@ The code provided in the following R script files will reproduce all the numbers
 Section 3 (can be run without data)
 
 * sim.R
-* times.R
 
 Section 4.3 (requires data)
-
-* synth.R (requires the provided "prop_list_syn.rds" file)
-* fig2_tab3.R
-
-Section 4.4 (requires data)
 
 * app.R (requires the provided "prop_list.rds" file)
 * data_summ.R
@@ -48,18 +42,10 @@ R version 3.6.1
 
 The file "sim.R" runs the main simulation in Section 3 for a single set of parameter values and prints out the results in Table 2. It runs on 20 cores on a single node for about 20 minutes. To obtain the results for all sets of parameter values, the user could either run the jobs successively, or simultaneously on an array job.
 
-The file "times.R" creates Figure 1. It runs on 20 cores on a single node for about 2 and a half hours and saves the results onto a file called "times.rds". The code at the end of the file script creates the plot (commented out by default). Figure 1 displays the computation times of our method and will therefore not be exactly reproducible.
-
-#### Section 4.3
-
-The file "synth.R" runs the main analysis for this section. It loads the dataset file and "prop_list_syn.rds" (which contains parameters used in the sampling algorithm). The script runs on 25 cores on a single node for about 22 hours and saves the results onto a file called "synth_results.rds"
-
-The file "fig2_tab3.R" creates Figure 2 and Table 3. It loads the dataset file and the results from "synth.R", and can be run in a short amount of time on a standard desktop computer.
-
 #### Section 4.4
 
 The file "app.R" runs the main analysis for this section. It loads the dataset file and "prop_list.rds" (which contains parameters used in the sampling algorithm). It runs on a single core for about 17 hours and saves the results onto a file called "app_samp.rds".
 
-The file "data_summ.R" creates Figure 3 and the data summary section of Table 4. It requires the dataset file, and it can be run in a short amount of time on a standard desktop computer.
+The file "data_summ.R" creates Figure 1 and the data summary section of Table 2. It requires the dataset file, and it can be run in a short amount of time on a standard desktop computer.
 
-The file "app_results.R" creates Figure 4 and the "Analysis results" section of Table 4. It loads the results from "app.R", and it can be run in a short amount of time on a standard desktop computer.
+The file "app_results.R" creates Figure 2 and the "Analysis results" section of Table 2. It loads the results from "app.R", and it can be run in a short amount of time on a standard desktop computer.
